@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        body {
+            background-color: slateblue;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #marca {
+            background-color: wheat;
+            color: rgb(96, 65, 209);
+            width: 200px;
+            box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.342);
+            border-radius: 4px 10px;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgb(128, 114, 219);
+            border-radius: 4px 4px 15px 15px;
+        }
+
+        header>h1 {
+            margin: 1px;
+        }
+
+        div>a {
+            display: none;
+
+        }
+
+        div:hover>a {
+            display: block;
+            background-color: rgb(27, 7, 204);
+            padding: 3px;
+            margin: 5px 5px;
+            width: 100px;
+            border-radius: 10px ;
+            color: rgba(255, 255, 255, 0.945);
+            font-weight: bold;
+            font-size: medium;
+            text-decoration: none;
+        }
+
+        div {
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            width: 100px;
+        }
+
+        main {
+            margin: center;
+
+        }
+
+        article {
+            font-weight: bold;
+            font-size: larger;
+            width: 150px;
+        }
+
+        section{
+            display: inline-block;
+            background-image: linear-gradient(wheat, rgb(154, 149, 204));
+            border-radius: 4px 4px 10px 10px;
+            padding: 20px;
+            height: 700px;
+            text-align: left;
+        }
+
+
+
+        footer {
+            background-color: yellow;
+            text-align: center;
+            font-weight: bold;
+            font-size: larger;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="marca">STARTASKS</h1>
+        <nav>
+            <div>
+                ...
+                <a href="#">Manual</a>
+                <a href="#">Video</a>
+                <a href="#">Suporte</a>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="organizar">
+            <h2>Organizar</h2>
+            <article>
+                <ul>
+                    <li>Todos as tarefas</li>
+                    <li>Classificação</li>
+                    <li>Horários</li>
+                    <li>Esqueleto em blocos e colocar a Classificação que se encaixa em cada bloco</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="rotina">
+            <h2>Rotina fixa</h2>
+            <article>
+                <ul>
+                    <li>
+                        Organizar cada tarefa de cada dia (fixos, mas podem sofrer alterações temporárias ou
+                        definitivas)
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <article>
+                <ul>
+                    <li>Agenda diária (Alterar/ajustar as tarefas daquele dia)</li>
+                    <li>Data de hoje</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="calendario">
+            <h2>Calendário</h2>
+            <article>
+                <ul>
+                    <li>Armazena as anotações da agenda em dias anteriores e sucessores</li>
+                    <li>Mostra datas, dias e horas</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="metas">
+            <h2>Metas</h2>
+            <article>
+                <ul>
+                    <li>
+                        Exemplo de meta
+                    </li>
+                    <li>
+                        Data limite
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Em desenvolvimento...</p>
+    </footer>
+</body>
+
+</html>
