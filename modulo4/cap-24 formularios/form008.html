@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="get">
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required 
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" required>
+        </p>
+         <!-- OBS: 
+          -> Precisa colocar o sistema de soma oninput (oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)") nos dois, pois se somente em um input (somente no primeiro input por exemplo), o valor da soma só será atualizado após alterar o valor do primeiro input que está com o sistema de soma e
+         -> se colocar o sistema de soma em um input e somente imprimir o próprio valor no segundo input, a soma ficará alternando entre a soma caso altere o primeiro input (com o sistema de soma) e o segundo input que imprimi somente o próprio valor que foi alterado sem a soma (somente imprimi o próprio valor) subscrevendo o valor da soma -->
+        <p>
+            <label for="isoma">Soma: </label>
+            <output id="isoma">0</output>
+        </p>
+    </form>
+</body>
+</html>
